@@ -1,16 +1,16 @@
 import { useCallback, useState } from "react";
 import styles from "./Input.module.scss";
 
-const Input = ({ getWeatherInfoAction }) => {
+const Input = ({ getWeatherInfoAction, setLoading }) => {
   const [city, setCity] = useState("");
 
   const getWeatherInfo = useCallback(
     (e) => {
       e.preventDefault();
-      console.log(city);
+      setLoading(true);
       getWeatherInfoAction(city);
     },
-    [city, getWeatherInfoAction]
+    [city, getWeatherInfoAction, setLoading]
   );
   return (
     <form onSubmit={getWeatherInfo} className={styles.inputContainer}>

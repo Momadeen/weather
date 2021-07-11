@@ -1,7 +1,7 @@
 .Weather {
   background-color: #231d40;
   width: 100%;
-  padding: 20px;
+  padding: 80px 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -38,7 +38,6 @@
     .temps {
       flex-direction: column;
       display: flex;
-      // text-align: center;
       justify-content: center;
       align-items: center;
       align-content: center;
@@ -47,8 +46,9 @@
       }
       .subTemps {
         display: flex;
-        h2 {
-          margin-right: 20px;
+        margin-top: 20px;
+        > h2 {
+          margin-right: 10px;
         }
       }
       .tempNumber {
