@@ -1,0 +1,64 @@
+.Weather {
+  background-color: #231d40;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  .title {
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+  }
+  p {
+    opacity: 0.3;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .errorMsg {
+    color: red;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  .info {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2:first-letter {
+      text-transform: uppercase;
+    }
+    .temps {
+      flex-direction: column;
+      display: flex;
+      // text-align: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      > h2 {
+        font-size: 35px;
+      }
+      .subTemps {
+        display: flex;
+        h2 {
+          margin-right: 20px;
+        }
+      }
+      .tempNumber {
+        &::after {
+          content: "\00b0";
+        }
+      }
+    }
+    .description {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 .hero {
   height: 100%;
   position: relative;
+  width: 100%;
+  padding: 20px;
   .heroTitles {
     height: 100%;
     width: 100%;
@@ -8,13 +10,16 @@
     justify-content: center;
     flex-direction: column;
     color: #fff;
-    h2 {
+    .opacityTitle {
       font-size: 140px;
       color: #fff;
       opacity: 0.1;
       letter-spacing: 5px;
       position: absolute;
+      right: 30%;
+      width: 46%;
     }
+
     .titlesContainer {
       width: 100%;
       margin-left: 80px;
@@ -22,10 +27,12 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
       .heroTitle {
         font-size: 100px;
         font-weight: 600;
         display: block;
+
         .redPoint {
           content: "";
           background-color: #db4646;
@@ -47,6 +54,25 @@
     left: 0;
 
     .bubble {
+    }
+  }
+}
+
+@media screen and (max-device-width: 700px) {
+  .heroTitles {
+    .titlesContainer {
+      margin-left: 0 !important;
+      .heroTitle {
+        font-size: 60px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 1000px) {
+  .heroTitles {
+    .opacityTitle {
+      font-size: 80px!important;
     }
   }
 }

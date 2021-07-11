@@ -1,0 +1,21 @@
+.inputContainer {
+  display: flex;
+  width: 100%;
+  input {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    outline: none;
+    width: 80%;
+    font-weight: 600;
+    background-color: #f0fbff;
+  }
+  button {
+    background-color: #3279c9;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding-right: 5em;
+    padding-left: 5em;
+    line-height: 1.8;
+  }
+}

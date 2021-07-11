@@ -2,7 +2,7 @@ import styles from "../../hero.module.scss";
 
 const HeroTitle = () => (
   <div className={styles.heroTitles}>
-    <h2>CNN - 4 YOU</h2>
+    <h2 className={styles.opacityTitle}>CNN - 4 YOU</h2>
     <div className={styles.titlesContainer}>
       <h1 className={styles.heroTitle}>
         Hello
