@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+
 .Weather {
-  background-color: #231d40;
+  background-color: #192841;
   width: 100%;
   padding: 80px 30px;
   display: flex;
@@ -32,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Otomanopee One", sans-serif;
     h2:first-letter {
       text-transform: uppercase;
     }
@@ -47,6 +50,7 @@
       .subTemps {
         display: flex;
         margin-top: 20px;
+
         > h2 {
           margin-right: 10px;
         }
