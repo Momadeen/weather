@@ -1,11 +1,13 @@
 import React from "react";
-import Header from "./components/Header";
+import Bubbles from "./components/Bubbles";
+import HeroTitle from "./components/HeroTitle";
 import styles from "./hero.module.scss";
 
 const Hero = () => {
   return (
-    <div>
-      <Header />
+    <div className={styles.hero}>
+      <Bubbles />
+      <HeroTitle />
     </div>
   );
 };

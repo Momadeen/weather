@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    color: #fff;
+    flex-basis: 40%;
+  }
+  .intro {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #fff;
+    div {
+      width: 25px;
+      height: 25px;
+      color: #fff;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-right: 10px;
+      color: #181a1b;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

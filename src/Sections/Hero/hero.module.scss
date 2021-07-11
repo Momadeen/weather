@@ -1,0 +1,52 @@
+.hero {
+  height: 100%;
+  position: relative;
+  .heroTitles {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    h2 {
+      font-size: 140px;
+      color: #fff;
+      opacity: 0.1;
+      letter-spacing: 5px;
+      position: absolute;
+    }
+    .titlesContainer {
+      width: 100%;
+      margin-left: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .heroTitle {
+        font-size: 100px;
+        font-weight: 600;
+        display: block;
+        .redPoint {
+          content: "";
+          background-color: #db4646;
+          width: 10px;
+          height: 10px;
+          color: #db4646;
+          border-radius: 50%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .BubblesContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    .bubble {
+    }
+  }
+}

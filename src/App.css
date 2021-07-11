@@ -1,7 +1,10 @@
 .App {
-  background-color: #181A1B;
+  background-color: #181a1b;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
+
