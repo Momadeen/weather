@@ -14,15 +14,12 @@ const Weather = () => {
   const dispatch = useDispatch();
   const getWeatherInfoAction = (city) => dispatch(fetchWeather(city));
 
-  console.log({ weatherSelector });
-
+  // useEffect to create loading state
   useEffect(() => {
     if (weatherSelector) {
       setLoading(false);
     }
   }, [weatherSelector]);
-
-  console.log(loading);
 
   return (
     <div className={styles.Weather}>
